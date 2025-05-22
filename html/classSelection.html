@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/stylesClassSelection.css">
+    <script src="../js/classSelection.js"></script>
     <title>Let's Study - Class Selection</title>
 </head>
 <body>
@@ -19,25 +20,24 @@
         <p class="subtitle">Select any one</p>
     
         <div class="grid">
-          <button class="card">EAMCET</button>
-          <button class="card">JEE</button>
-          <button class="card">CAT</button>
-          <button class="card">SSC</button>
-          <button class="card">UPSC</button>
-          <button class="card">RRB</button>
-          <button class="card">SAT</button>
-          <button class="card">CUET</button>
-          <button class="card">NEET</button>
-          <button class="card">GATE</button>
-          <button class="card">CLAT</button>
-          <button class="card">Banking</button>
-          <button class="card">Railway</button>
-          <button class="card">Defence</button>
-          <button class="card">Others</button>
+          <button class="card" id="EAMCET" onclick="selectClass('EAMCET')">EAMCET</button>
+          <button class="card" id="JEE" onclick="selectClass('JEE')">JEE</button>
+          <button class="card" id="CAT" onclick="selectClass('CAT')">CAT</button>
+          <button class="card" id="SSC" onclick="selectClass('SSC')">SSC</button>
+          <button class="card" id="UPSC" onclick="selectClass('UPSC')">UPSC</button>
+          <button class="card" id="RRB" onclick="selectClass('RRB')">RRB</button>
+          <button class="card" id="SAT" onclick="selectClass('SAT')">SAT</button>
+          <button class="card" id="CUET" onclick="selectClass('CUET')">CUET</button>
+          <button class="card" id="NEET" onclick="selectClass('NEET')">NEET</button>
+          <button class="card" id="GATE" onclick="selectClass('GATE')">GATE</button>
+          <button class="card" id="CLAT" onclick="selectClass('CLAT')">CLAT</button>
+          <button class="card" id="Banking" onclick="selectClass('Banking')">Banking</button>
+          <button class="card" id="Railway" onclick="selectClass('Railway')">Railway</button>
+          <button class="card" id="Defence" onclick="selectClass('Defence')">Defence</button>
+          <button class="card" id="Others" onclick="selectClass('Others')">Others</button>
         </div>
     
         <div class="navigation">
-          <button class="nav-button prev">Previous</button>
           <button class="nav-button next">Next</button>
         </div>
 
