@@ -24,16 +24,16 @@ function sendOTP() {
 function verifyOTP() {
     if (document.getElementsByClassName("verify-otp")[0].style.color === "white") {
         const otp = document.getElementById("otp").value;
-        if (otp === "666333") {
+        if (otp === "666333") { // Insert code here for otp verification
             alert("OTP verified successfully");
+            document.getElementById("otp").value = "";
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            window.location.href = "../html/classSelection.html";
         }
         else {
             alert("Incorrect OTP");
         }
-        document.getElementById("otp").value = "";
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        window.location.href = "../html/classSelection.html";
     }
 
 }
