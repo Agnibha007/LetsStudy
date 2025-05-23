@@ -1,3 +1,5 @@
+history.pushState({}, null, "emailLogin");
+
 function sendOTP() {
     const email = document.getElementById("email").value;
     if (!email.endsWith(".com")) {

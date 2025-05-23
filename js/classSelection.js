@@ -1,4 +1,5 @@
 let counter = "";
+history.pushState({}, null, "classSelection");
 
 function selectClass(className) {
     if (counter != "") {
