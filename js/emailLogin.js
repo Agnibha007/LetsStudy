@@ -1,5 +1,3 @@
-history.pushState({}, null, "emailLogin");
-
 function sendOTP() {
     const email = document.getElementById("email").value;
     if (!email.endsWith(".com")) {
@@ -19,6 +17,7 @@ function sendOTP() {
         document.getElementById("email").disabled = true;
         document.getElementsByClassName("send-otp")[0].disabled = true;
         document.getElementsByClassName("send-otp")[0].style.color = "grey";
+        //Insert code here to send OTP to email
         alert("OTP sent successfully");
     }
 }

@@ -149,11 +149,6 @@ h1 {
     background-color: #fffdfd;
     z-index: 0;
 }
-.step:nth-child(1)::after {
-    background-color: black;
-}
-
-
 
 @media screen and (max-width: 450px) {
     .navbar {

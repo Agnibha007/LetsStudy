@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Let's Study - Final Steps</title>
+    <title>Let's Study - Final Steps for Registration</title>
     <link rel="stylesheet" href="../css/stylesfinalDetail.css">
     <script src="../js/finalDetails.js"></script>
 </head>
@@ -16,21 +16,47 @@
         <li class="navItem"><a href="/html/notes.html">Notes</a></li>
         <li class="navItem"><a href="/html/about.html">About</a></li>
     </ul>
-
+    <div class="headDiv">
     <div class="container">
-        <h1>Just a few more details to fill</h1>
-        <div class="dropdown">
-            <button class="dropdown-button">Your Preparation ▼</button>
-            <div class="dropdown-content">
-                <a onclick="handleClick(1)">1 year</a>
-                <a onclick="handleClick(2)">2 Years</a>
-                <a onclick="handleClick(3)">3 years</a>
-                <a onclick="handleClick(4)">4 years</a>
-                <a onclick="handleClick(0)">4+ Years</a>
-            </div>
+        <div class="mentor-buttons">
+            <h1>Select Your Mentor</h1>
+            <button class="mentor-btn human" onclick="showDropdown('human')">Human Mentor</button>
+            <button class="mentor-btn ai" onclick="showDropdown('ai')">AI Mentor</button>
+        </div>
+
+        <div class="dropdown" id="prepDropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown()">Your Preparation ▼</button>
+            <ul class="dropdown-content">
+                <li onclick="handleClick(this)">1 year</li>
+                <li onclick="handleClick(this)">2 Years</li>
+                <li onclick="handleClick(this)">3 years</li>
+                <li onclick="handleClick(this)">4 years</li>
+                <li onclick="handleClick(this)">4+ Years</li>
+            </ul>
+        </div>
+
+        <div class="terms" id="termsSection" style="display: none;">
+            <input type="checkbox" id="agree" onclick="toggleSubmit()" onkeydown="toggleSubmit()"/>
+            <label for="agree">I agree to the <a href="/html/terms.html" target="_blank">Terms and Conditions</a></label>
+            <br />
+            <button class="submit-btn" id="submitBtn" disabled>Submit</button>
         </div>
     </div>
-
+</div>
+<div class="stepper">
+    <div class="step active">
+      <div class="circle"></div>
+      <div class="label">Step 1</div>
+    </div>
+    <div class="step active">
+      <div class="circle"></div>
+      <div class="label">Step 2</div>
+    </div>
+    <div class="step active">
+      <div class="circle"></div>
+      <div class="label">Step 3</div>
+    </div>
+  </div>
 </body>
 
 </html>
