@@ -21,6 +21,13 @@ window.addEventListener("click", function (e) {
     }
 });
 
+document.getElementById("submitBtn").addEventListener("click", function (e) {
+    if (!e.target.disabled) {
+        window.location.href = "html/classes.html";
+    }
+});
+
+
 function toggleSubmit() {
     const agreeBox = document.getElementById("agree");
     const submitBtn = document.getElementById("submitBtn");
