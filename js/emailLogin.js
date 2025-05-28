@@ -5,15 +5,18 @@ function sendOTP() {
     }
     else {
         alert("Please Wait");
+
+        localStorage.setItem("email", email);
+        localStorage.setItem("name", document.getElementById("name").value);
         document.getElementById("otp").disabled = false;
+        document.getElementById("otp").placeholder = "Enter OTP";
         document.getElementById("btn-otp").disabled = false;
         document.getElementsByClassName("verify-otp")[0].style.color = "white";
-        document.getElementById("otp").placeholder = "Enter OTP";
         document.getElementById("name").placeholder = document.getElementById("name").value;
-        document.getElementById("email").placeholder = document.getElementById("email").value;
         document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
         document.getElementById("name").disabled = true;
+        document.getElementById("email").placeholder = document.getElementById("email").value;
+        document.getElementById("email").value = "";
         document.getElementById("email").disabled = true;
         document.getElementsByClassName("send-otp")[0].disabled = true;
         document.getElementsByClassName("send-otp")[0].style.color = "grey";

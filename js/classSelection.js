@@ -9,6 +9,7 @@ function selectClass(className) {
     else {
         document.getElementById(className).style.backgroundColor = "#6a78de";
         counter = className;
+        localStorage.setItem("class", className);
     } //Insert code for sending the details to server
 }
 
