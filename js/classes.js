@@ -6,7 +6,9 @@ function joinRoom(){
     }
     else{
         alert("Joining " + selectedRoom.textContent);
-        //Insert code for joining new room
+        localStorage.setItem("selectedRoom", selectedRoom.textContent.slice(-1));
+        //Insert backend
+        window.location.href = "joinedClass.html";
     }
 }
 

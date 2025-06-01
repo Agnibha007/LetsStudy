@@ -1,0 +1,137 @@
+.navbar {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: right;
+    color: black;
+}
+
+.navItem {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    position: relative;
+}
+
+.navItem a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.navItem:hover {
+    background-color: green;
+}
+
+.navItem:hover a {
+    color: white;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: orange;
+    position: fixed;
+    top: 5;
+    left: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #555;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-room {
+    width: 250px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 3px solid #4f46e5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+    max-width: 500px;
+}
+
+.room {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 1.2rem 0;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.room:hover {
+    border-color: #4f46e5;
+    background-color: #eef2ff;
+    transform: scale(1.05);
+}
+
+.leave-button {
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.leave-button:hover {
+    background-color: #dc2626;
+}
+
+.rooms-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 450px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .title {
+        position: relative;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
