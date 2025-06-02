@@ -27,17 +27,17 @@
         <div class="dropdown" id="prepDropdown">
             <button class="dropdown-btn" onclick="toggleDropdown()">Your Preparation ▼</button>
             <ul class="dropdown-content">
+                <li onclick="handleClick(this)">No Preparation</li>
                 <li onclick="handleClick(this)">1 year</li>
                 <li onclick="handleClick(this)">2 Years</li>
                 <li onclick="handleClick(this)">3 years</li>
-                <li onclick="handleClick(this)">4 years</li>
-                <li onclick="handleClick(this)">4+ Years</li>
+                <li onclick="handleClick(this)">3+ years</li>
             </ul>
         </div>
 
         <div class="terms" id="termsSection" style="display: none;">
             <input type="checkbox" id="agree" onclick="toggleSubmit()" onkeydown="toggleSubmit()"/>
-            <label for="agree">I agree to the <a href="/html/terms.html" target="_blank">Terms and Conditions</a></label>
+            <label for="agree">I agree to the <a href="/html/terms.html">Terms and Conditions</a></label>
             <br />
             <button class="submit-btn" onclick="window.location.href='classes.html'" id="submitBtn" disabled>Submit</button>
         </div>

@@ -9,9 +9,9 @@
 </head>
 <body>
     <ul class="navbar">
-        <li class="navItem title"><a href="/">Let's Study</a></li>
-        <li class="navItem"><a href="/">Home</a></li>
-        <li class="navItem"><a href="/html/classes.html">Classes</a></li>
+        <li class="navItem title"><a onclick="leaveClass('/index.html')">Let's Study</a></li>
+        <li class="navItem"><a onclick="leaveClass('/index.html')">Home</a></li>
+        <li class="navItem"><a onclick="leaveClass('/html/classes.html')">Classes</a></li>
         <li class="navItem"><a href="/html/terms.html">Terms and Conditions</a></li>
     </ul>
 
@@ -20,7 +20,7 @@
 
   <div class="container">
     <div class="main-room">
-      Room 1<br>(You're here)
+      Room <br>(You're here)
     </div>
 
     <div class="rooms-grid">
@@ -42,6 +42,6 @@
     </div>
   </div>
 
-  <button class="leave-button" onclick="window.location.href='/html/classes.html'">Leave</button>
+  <button class="leave-button" onclick="leaveClass('/html/classes.html')">Leave</button>
 </body>
 </html>

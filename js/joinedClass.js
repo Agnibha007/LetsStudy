@@ -17,3 +17,10 @@ function joinRoom(roomNumber) {
     currentRoom = roomNumber;
     localStorage.setItem("selectedRoom", roomNumber);
 }
+
+function leaveClass(site) {
+    if (window.confirm("Are you sure you want to leave this class?")) {
+        localStorage.removeItem("selectedRoom");
+        window.location.href = site;
+    }
+}

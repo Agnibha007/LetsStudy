@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Study - Terms and Conditions</title>
     <link rel="stylesheet" href="../css/stylesterms.css">
+    <script src="../js/terms.js"></script>
 </head>
 
 <body>
@@ -39,11 +40,11 @@
     </div>
 
     <div class="checkbox">
-        <input type="checkbox" id="agree" required>
+        <input type="checkbox" id="agree" onclick="toggleSubmit()" required>
         <label for="agree">I hereby declare I follow the rules and regulations</label>
     </div>
 
-    <button type="submit" onclick="window.location.href = '/html/classes.html'">OK</button>
+    <button type="submit" onclick="toggleOK()" id="submitBtn" disabled>OK</button>
 </body>
 
 </html>
