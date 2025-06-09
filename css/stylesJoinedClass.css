@@ -68,7 +68,7 @@ p {
     width: 250px;
     height: 300px;
     background-color: #ffffff;
-    border: 3px solid #4f46e5;
+    border: 3px solid grey;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     display: flex;
@@ -97,8 +97,8 @@ p {
 }
 
 .room:hover {
-    border-color: #4f46e5;
-    background-color: #eef2ff;
+    border-color: grey;
+    background-color: rgb(221, 218, 218);
     transform: scale(1.05);
 }
 

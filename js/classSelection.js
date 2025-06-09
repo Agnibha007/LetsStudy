@@ -2,12 +2,12 @@ let counter = "";
 
 function selectClass(className) {
     if (counter != "") {
-        document.getElementById(className).style.backgroundColor = "#6a78de";
+        document.getElementById(className).style.backgroundColor = "grey";
         document.getElementById(counter).style.backgroundColor = "white";
         counter = className;
     }
     else {
-        document.getElementById(className).style.backgroundColor = "#6a78de";
+        document.getElementById(className).style.backgroundColor = "grey";
         counter = className;
         localStorage.setItem("class", className);
     } //Insert code for sending the details to server

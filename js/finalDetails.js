@@ -10,7 +10,17 @@ function handleClick(val) {
     // console.log("Name: " + localStorage.getItem("name"));
 }
 
-function showDropdown(mentor) {
+function showDropdown(_mentor) {
+    if (mentor === "") {
+        mentor = _mentor;
+    } else {
+        if (mentor === _mentor) {
+            mentor = "";
+        } else {
+            document.getElementsByClassName(mentor)[0].style.backgroundColor = "black";
+            mentor = _mentor;
+        }
+    }
     document.getElementsByClassName(mentor)[0].style.backgroundColor = "grey";
     document.getElementById("prepDropdown").style.display = "inline-block";
     mentor = mentor;

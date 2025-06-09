@@ -25,11 +25,11 @@ function joinRoom(){
 function selectRoom(room){
     if(selectedRoom === ""){
         selectedRoom = room;
-        room.style.backgroundColor = "#6a78de";
+        room.style.backgroundColor = "grey";
     }
     else{
         selectedRoom.style.backgroundColor = "white";
         selectedRoom = room;
-        room.style.backgroundColor = "#6a78de";
+        room.style.backgroundColor = "grey";
     }
 }
